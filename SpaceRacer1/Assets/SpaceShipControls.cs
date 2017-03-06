@@ -36,7 +36,7 @@ public class SpaceShipControls : MonoBehaviour {
         _position.x += _velocity.x;
         _position.y += _velocity.y;*/
 
-        _velocity.x = .01f; // * Time.deltaTime;
+        _velocity.y = .02f; // * Time.deltaTime;
         transform.Translate(_velocity);
 
     }
