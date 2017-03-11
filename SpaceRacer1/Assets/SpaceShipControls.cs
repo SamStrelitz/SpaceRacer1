@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpaceShipControls : MonoBehaviour {
 
     float _rotAngle = 0f;
-    float rotSpeed = 1.4f;
+    float rotSpeed = 100f;
     Vector3 _velocity;
     float _thrust = .1f;
 
@@ -20,8 +20,11 @@ public class SpaceShipControls : MonoBehaviour {
         bool thrusting = false;
         _rotAngle -= movement * rotSpeed * Time.deltaTime;
 
-        transform.Rotate(0,0,_rotAngle);
-      
+        //transform.Rotate(0,0,_rotAngle);
+        //transform.localRotation.z += _rotAngle;
+        float curRot = transform.localRotation.eulerAngles.z;
+        transform.localRotation = Quaternion.Euler(new Vector3(0, 0, _rotAngle));
+
         float vert = Input.GetAxis("Vertical");
         if (vert < 0)
             vert = 0;
