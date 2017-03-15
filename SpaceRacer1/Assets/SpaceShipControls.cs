@@ -47,4 +47,9 @@ public class SpaceShipControls : MonoBehaviour {
         transform.Translate(_velocity, Space.World);
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("OnTriggerEnterSpaceship"); 
+    }
 }

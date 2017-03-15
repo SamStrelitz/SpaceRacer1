@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Proto1_scn.unity
+- path: Assets/collisiondev.unity
   isLoaded: 1
   isActive: 1
