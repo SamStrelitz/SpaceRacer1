@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpaceShipControls : MonoBehaviour {
 
@@ -50,6 +51,10 @@ public class SpaceShipControls : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("OnTriggerEnterSpaceship"); 
+        Debug.Log("OnTriggerEnterSpaceship");
+        Scene current = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(current.name);
+        //SceneManager.LoadScene("Collisiondev");
+        
     }
 }
