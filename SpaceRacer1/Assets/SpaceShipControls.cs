@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SpaceShipControls : MonoBehaviour {
 
     float _rotAngle = 0f;
-    float rotSpeed = 100f;
+    [SerializeField] float rotSpeed = 100f;
     Vector3 _velocity;
     float _thrust = .1f;
 
@@ -52,9 +52,19 @@ public class SpaceShipControls : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("OnTriggerEnterSpaceship");
-        Scene current = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(current.name);
-        //SceneManager.LoadScene("Collisiondev");
+
+        MoonDefiner md = collision.GetComponent<MoonDefiner>();
+
+        if(md != null)
+        {
+            Debug.Log("Moon collider");
+        }
+        else
+        {
+            Debug.Log("Not Moon Collider");
+            Scene current = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(current.name);
+        }
         
     }
 }
