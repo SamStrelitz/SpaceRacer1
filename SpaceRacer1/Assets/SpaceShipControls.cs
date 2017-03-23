@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class SpaceShipControls : MonoBehaviour {
 
     float _rotAngle = 0f;
-    [SerializeField] float rotSpeed = 100f;
-    Vector3 _velocity;
-    float _thrust = .1f;
+    float rotSpeed = 300f;
+    public Vector3 _velocity;
+    float _thrust = .05f;
 
     void Start () {
         _velocity = new Vector3(0f, 0f, 0f);
@@ -57,7 +57,7 @@ public class SpaceShipControls : MonoBehaviour {
 
         if(md != null)
         {
-            Debug.Log("Moon collider");
+            Debug.Log("Moon collider, load next scene");
         }
         else
         {

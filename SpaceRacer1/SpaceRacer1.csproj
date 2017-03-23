@@ -76,7 +76,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AsteroidDefiner.cs" />
+    <Compile Include="Assets\BlackHoleGravity.cs" />
     <Compile Include="Assets\EarthDefiner.cs" />
+    <Compile Include="Assets\GravityController.cs" />
+    <Compile Include="Assets\GravityObject.cs" />
     <Compile Include="Assets\MoonDefiner.cs" />
     <Compile Include="Assets\SpaceShipControls.cs" />
   </ItemGroup>
