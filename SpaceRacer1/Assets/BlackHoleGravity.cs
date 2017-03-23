@@ -22,7 +22,12 @@ public class BlackHoleGravity : MonoBehaviour {
         float dy2 = direction.y * direction.y;
         float distanceSq = Mathf.Sqrt(dx2 + dy2);
 
-        Vector3 unitDirection = Vector3.ClampMagnitude(direction, 1);
+        //Vector3 unitDirection = Vector3.ClampMagnitude(direction, 1);
+        //ClampMagnitude fails to find unit if distance is less than 1;
+        //distance sq is my vector length, right?
+        Vector3 unitDirection = direction / distanceSq;
+        
+        
 
 
         float distStrength = gravityStrength * (1f/distanceSq);
