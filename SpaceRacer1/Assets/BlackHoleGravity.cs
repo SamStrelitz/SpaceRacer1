@@ -18,10 +18,11 @@ public class BlackHoleGravity : MonoBehaviour {
         Vector3 direction = myPosition - shipPosition;
         
 
-        Vector3 unitDirection = Vector3.ClampMagnitude(direction, 1);
         float dx2 = direction.x * direction.x;
-        float dy2 = direction.x * direction.x;
+        float dy2 = direction.y * direction.y;
         float distanceSq = Mathf.Sqrt(dx2 + dy2);
+
+        Vector3 unitDirection = Vector3.ClampMagnitude(direction, 1);
 
 
         float distStrength = gravityStrength * (1f/distanceSq);
