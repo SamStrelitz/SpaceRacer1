@@ -5,7 +5,7 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
     Vendor:   NVIDIA
     VRAM:     8119 MB
-    Driver:   21.21.13.7878
+    Driver:   21.21.13.7892
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -17,11 +17,42 @@ Platform assembly: C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Da
 Loading C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.145 seconds
+- Completed reload, in  0.167 seconds
 Platform assembly: C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 120Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.035387 ms
+UnloadTime: 2.663103 ms
+OnTriggerEnterSpaceship
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Not Moon Collider
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.040931 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 273.
+Total: 0.272145 ms (FindLiveObjects: 0.067781 ms CreateObjectMapping: 0.024462 ms MarkObjects: 0.168689 ms  DeleteObjects: 0.009173 ms)
+
+OnTriggerEnterSpaceship
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Not Moon Collider
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.627871 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
+Total: 0.163593 ms (FindLiveObjects: 0.034400 ms CreateObjectMapping: 0.021404 ms MarkObjects: 0.101672 ms  DeleteObjects: 0.004841 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 9c0 -> priority: 1 
+  Thread -> id: 1f60 -> priority: 1 
