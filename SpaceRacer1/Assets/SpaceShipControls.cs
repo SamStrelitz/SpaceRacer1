@@ -9,6 +9,7 @@ public class SpaceShipControls : MonoBehaviour {
     float rotSpeed = 300f;
     public Vector3 _velocity;
     float _thrust = .05f;
+    
 
     void Start () {
         _velocity = new Vector3(0f, 0f, 0f);
