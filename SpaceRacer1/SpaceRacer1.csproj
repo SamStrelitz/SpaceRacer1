@@ -82,6 +82,7 @@
     <Compile Include="Assets\GravityController.cs" />
     <Compile Include="Assets\GravityObject.cs" />
     <Compile Include="Assets\MoonDefiner.cs" />
+    <Compile Include="Assets\ParticleThrustScript.cs" />
     <Compile Include="Assets\SpaceShipControls.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

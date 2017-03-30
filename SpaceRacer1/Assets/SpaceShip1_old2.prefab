@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50884066348889374}
   - component: {fileID: 60997354746294846}
   m_Layer: 0
-  m_Name: SpaceShip1
+  m_Name: SpaceShip1_old2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -328,6 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _velocity: {x: 0, y: 0, z: 0}
+  pts: {fileID: 0}
 --- !u!212 &212925240591202534
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -9,7 +9,8 @@ public class SpaceShipControls : MonoBehaviour {
     float rotSpeed = 300f;
     public Vector3 _velocity;
     float _thrust = .05f;
-    
+
+    [SerializeField] ParticleThrustScript pts;
 
     void Start () {
         _velocity = new Vector3(0f, 0f, 0f);
@@ -37,14 +38,20 @@ public class SpaceShipControls : MonoBehaviour {
 
         if (thrusting)
         {
-           
+
+            pts.gameObject.SetActive(true);
             Vector3 UnitForward = Vector3.ClampMagnitude(transform.up, 1);
-      
+
             _velocity.x += UnitForward.x * _thrust * vert * Time.deltaTime;
-            _velocity.y += UnitForward.y * _thrust * vert * Time.deltaTime; 
+            _velocity.y += UnitForward.y * _thrust * vert * Time.deltaTime;
             _velocity.z = 0f;
 
         }
+        else
+        {
+            pts.gameObject.SetActive(false);
+        }
+
         //transform.Translate(_velocity);
         transform.Translate(_velocity, Space.World);
 
