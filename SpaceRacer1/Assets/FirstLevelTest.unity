@@ -677,6 +677,55 @@ Prefab:
       propertyPath: m_RootOrder
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 199276852849067418, guid: eeded6f34c3a48e4aa57ccbdae4c9531,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0aad2ddc5649c794cb4944c444bb9c1a, type: 2}
+    - target: {fileID: 199276852849067418, guid: eeded6f34c3a48e4aa57ccbdae4c9531,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0aad2ddc5649c794cb4944c444bb9c1a, type: 2}
+    - target: {fileID: 4577523628645216, guid: eeded6f34c3a48e4aa57ccbdae4c9531, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198841124151097318, guid: eeded6f34c3a48e4aa57ccbdae4c9531,
+        type: 2}
+      propertyPath: randomSeed
+      value: -683480133
+      objectReference: {fileID: 0}
+    - target: {fileID: 198841124151097318, guid: eeded6f34c3a48e4aa57ccbdae4c9531,
+        type: 2}
+      propertyPath: ShapeModule.radius
+      value: 0.06289053
+      objectReference: {fileID: 0}
+    - target: {fileID: 198841124151097318, guid: eeded6f34c3a48e4aa57ccbdae4c9531,
+        type: 2}
+      propertyPath: lengthInSec
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198841124151097318, guid: eeded6f34c3a48e4aa57ccbdae4c9531,
+        type: 2}
+      propertyPath: speed
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 198841124151097318, guid: eeded6f34c3a48e4aa57ccbdae4c9531,
+        type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 198841124151097318, guid: eeded6f34c3a48e4aa57ccbdae4c9531,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 198841124151097318, guid: eeded6f34c3a48e4aa57ccbdae4c9531,
+        type: 2}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eeded6f34c3a48e4aa57ccbdae4c9531, type: 2}
   m_IsPrefabParent: 0
