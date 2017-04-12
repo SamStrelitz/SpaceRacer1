@@ -65,7 +65,26 @@ public class SpaceShipControls : MonoBehaviour {
 
         if(md != null)
         {
+            Scene current = SceneManager.GetActiveScene();
             Debug.Log("Moon collider, load next scene");
+            Debug.Log(current.name + "");
+
+            if(current.name == "e1m1")
+            {
+                SceneManager.LoadScene("e1m2");
+            }
+            if(current.name == "e1m2")
+            {
+                SceneManager.LoadScene("e1m3");
+            }
+            if (current.name == "e1m3")
+            {
+                SceneManager.LoadScene("e1m4");
+            }
+            if (current.name == "e1m4")
+            {
+                SceneManager.LoadScene("winner");
+            }
         }
         else
         {
