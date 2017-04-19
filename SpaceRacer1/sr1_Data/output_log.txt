@@ -17,7 +17,7 @@ Platform assembly: C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Da
 Loading C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.148 seconds
+- Completed reload, in  0.128 seconds
 Platform assembly: C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\aersi\Documents\GitHub\SpaceRacer\SpaceRacer1\sr1_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
@@ -25,7 +25,35 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.141866 ms
+UnloadTime: 285.215149 ms
+OnTriggerEnterSpaceship
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Not Moon Collider
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.620800 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 288.
+Total: 0.291840 ms (FindLiveObjects: 0.052053 ms CreateObjectMapping: 0.050773 ms MarkObjects: 0.180906 ms  DeleteObjects: 0.007680 ms)
+
+OnTriggerEnterSpaceship
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Not Moon Collider
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.625066 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 288.
+Total: 0.140800 ms (FindLiveObjects: 0.030293 ms CreateObjectMapping: 0.010666 ms MarkObjects: 0.093440 ms  DeleteObjects: 0.005546 ms)
+
 OnTriggerEnterSpaceship
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -38,11 +66,11 @@ e1m1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.544426 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.839253 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 293.
-Total: 0.197973 ms (FindLiveObjects: 0.034986 ms CreateObjectMapping: 0.038826 ms MarkObjects: 0.117333 ms  DeleteObjects: 0.005120 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 294.
+Total: 0.141226 ms (FindLiveObjects: 0.029866 ms CreateObjectMapping: 0.012800 ms MarkObjects: 0.092586 ms  DeleteObjects: 0.005120 ms)
 
 OnTriggerEnterSpaceship
  
@@ -57,10 +85,10 @@ e1m2
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.601600 ms
+UnloadTime: 0.687360 ms
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 283.
-Total: 0.148480 ms (FindLiveObjects: 0.029013 ms CreateObjectMapping: 0.013653 ms MarkObjects: 0.099413 ms  DeleteObjects: 0.005546 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 284.
+Total: 0.138240 ms (FindLiveObjects: 0.028586 ms CreateObjectMapping: 0.013226 ms MarkObjects: 0.090880 ms  DeleteObjects: 0.004693 ms)
 
 OnTriggerEnterSpaceship
  
@@ -75,10 +103,10 @@ e1m3
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.707413 ms
+UnloadTime: 0.540586 ms
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 373.
-Total: 0.290560 ms (FindLiveObjects: 0.041813 ms CreateObjectMapping: 0.016640 ms MarkObjects: 0.138240 ms  DeleteObjects: 0.090880 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 374.
+Total: 0.382720 ms (FindLiveObjects: 0.057600 ms CreateObjectMapping: 0.026026 ms MarkObjects: 0.185600 ms  DeleteObjects: 0.112213 ms)
 
 OnTriggerEnterSpaceship
  
@@ -93,10 +121,10 @@ e1m4
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.278293 ms
+UnloadTime: 1.316266 ms
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 235.
-Total: 0.177493 ms (FindLiveObjects: 0.022186 ms CreateObjectMapping: 0.009813 ms MarkObjects: 0.072533 ms  DeleteObjects: 0.071680 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 239.
+Total: 0.267520 ms (FindLiveObjects: 0.040960 ms CreateObjectMapping: 0.014933 ms MarkObjects: 0.114773 ms  DeleteObjects: 0.096426 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1af0 -> priority: 1 
+  Thread -> id: da0 -> priority: 1 
