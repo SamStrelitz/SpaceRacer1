@@ -55,6 +55,10 @@ public class SpaceShipControls : MonoBehaviour {
         //transform.Translate(_velocity);
         transform.Translate(_velocity, Space.World);
 
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

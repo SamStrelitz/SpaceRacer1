@@ -10,9 +10,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OldScenes/FirstLevelTest.unity
   - enabled: 1
-    path: Assets/Episode1/e1m2.unity
-  - enabled: 1
     path: Assets/Episode1/e1m1.unity
+  - enabled: 1
+    path: Assets/Episode1/e1m2.unity
   - enabled: 1
     path: Assets/Episode1/e1m3.unity
   - enabled: 1
