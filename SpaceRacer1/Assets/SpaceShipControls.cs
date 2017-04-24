@@ -8,8 +8,13 @@ public class SpaceShipControls : MonoBehaviour {
     float _rotAngle = 0f;
     float rotSpeed = 300f;
     public Vector3 _velocity;
-    float _thrust = .05f;
+    float _thrust = .01f;
 
+    private bool ButtonThrust = false;
+    private bool RightButtonPushed = false;
+    private bool LeftButtonPushed = false;
+
+    [SerializeField] bool UsingButtons = false;
     [SerializeField] ParticleThrustScript pts;
 
     void Start () {
@@ -18,8 +23,20 @@ public class SpaceShipControls : MonoBehaviour {
 	}
 	
 	void Update () {
-
-        float movement = Input.GetAxis("Horizontal");
+        float movement = 0;
+        if (UsingButtons == false)
+        {
+            movement = Input.GetAxis("Horizontal");
+        }
+        else
+        {
+            if (RightButtonPushed == true)
+                movement = 1;
+            else if (LeftButtonPushed == true)
+                movement = -1;
+            else
+                movement = 0;
+        }
         bool thrusting = false;
         _rotAngle -= movement * rotSpeed * Time.deltaTime;
 
@@ -28,23 +45,36 @@ public class SpaceShipControls : MonoBehaviour {
         float curRot = transform.localRotation.eulerAngles.z;
         transform.localRotation = Quaternion.Euler(new Vector3(0, 0, _rotAngle));
 
-        float vert = Input.GetAxis("Vertical");
-        if (vert < 0)
-            vert = 0;
-        else if (vert > 0)
-        {
-            thrusting = true;
-        }
 
+        if (UsingButtons == false)
+        {
+
+
+            float vert = Input.GetAxis("Vertical");
+            if (vert < 0)
+                vert = 0;
+            else if (vert > 0)
+            {
+                thrusting = true;
+            }
+        }
+        else
+        {
+            thrusting = ButtonThrust;
+        }
+        
         if (thrusting)
         {
 
             pts.gameObject.SetActive(true);
             Vector3 UnitForward = Vector3.ClampMagnitude(transform.up, 1);
 
-            _velocity.x += UnitForward.x * _thrust * vert * Time.deltaTime;
+            /*_velocity.x += UnitForward.x * _thrust * vert * Time.deltaTime;
             _velocity.y += UnitForward.y * _thrust * vert * Time.deltaTime;
-            _velocity.z = 0f;
+            _velocity.z = 0f;*/
+            _velocity.x += UnitForward.x * _thrust  * Time.deltaTime;
+            _velocity.y += UnitForward.y * _thrust  * Time.deltaTime;
+            _velocity.z = 0f; 
 
         }
         else
@@ -97,5 +127,32 @@ public class SpaceShipControls : MonoBehaviour {
             SceneManager.LoadScene(current.name);
         }
         
+    }
+    public void ThrustButtonPushed()
+    {
+        Debug.Log("Thrust Button Pushed");
+        ButtonThrust = true;
+    }
+    public void ThrustButtonReleased()
+    {
+        Debug.Log("Thrust Button Released");
+        ButtonThrust = false;
+    }
+    public void RightButtonDown()
+    {
+        Debug.Log("Right Button Down");
+        RightButtonPushed = true;
+    }
+    public void RightButtonReleased()
+    {
+        RightButtonPushed = false;
+    }
+    public void LeftButtonDown()
+    {
+        LeftButtonPushed = true;
+    }
+    public void LeftButtonReleased()
+    {
+        LeftButtonPushed = false;
     }
 }
