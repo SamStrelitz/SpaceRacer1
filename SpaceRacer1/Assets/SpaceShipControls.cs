@@ -119,7 +119,9 @@ public class SpaceShipControls : MonoBehaviour {
             {
                 SceneManager.LoadScene("e1m5");
             }
-            if(current.name=="e1m5")
+            if (current.name == "e1m5")
+                SceneManager.LoadScene("e1m6");
+            if(current.name=="e1m6")
             {
                 SceneManager.LoadScene("Winner");
             }

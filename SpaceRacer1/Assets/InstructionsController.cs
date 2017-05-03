@@ -19,7 +19,7 @@ public class InstructionsController : MonoBehaviour {
     {
         //SceneManager.LoadScene("e1m1");
         //debug load:
-        SceneManager.LoadScene("e1m1");
+        SceneManager.LoadScene("e1m6");
         
     }
 }
