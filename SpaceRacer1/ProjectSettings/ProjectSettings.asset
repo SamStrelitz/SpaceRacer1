@@ -194,8 +194,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Users/aersi/Documents/GitHub/SpaceRacer/SpaceRacer1/user.keystore
+  AndroidKeyaliasName: spaceracer1_key
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   androidEnableBanner: 1
